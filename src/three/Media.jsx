@@ -4,10 +4,7 @@ import { TextureLoader } from 'three';
 import { useLenis } from '@studio-freight/react-lenis';
 import { gsap } from 'gsap';
 
-import vertex from '../shader/vertex.glsl';
-import fragment from '../shader/fragment.glsl';
-
-export default function Media({ element, img, geometry }) {
+export default function Media({ element, img, geometry, vertex, fragment }) {
   const mesh = useRef();
   const bounds = useRef();
   const currentScroll = useRef();

@@ -9,13 +9,13 @@ export default function Main() {
       <div className='frame'>
         <div className='frame__links'>
           <a
-            href='https://github.com/MathisHumbert/threejs-wave-motion-effect-codrops'
+            href='https://github.com/MathisHumbert/r3f-wave-motion-effect-codrops'
             target='_blank'
           >
             Github
           </a>
           <a
-            href='https://threejs-gooey-image-hover-effects-codrops.vercel.app/'
+            href='https://r3f-infinite-circular-gallery-codrops.vercel.app/'
             target='_blank'
           >
             Previous Demo

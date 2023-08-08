@@ -1,14 +1,15 @@
+import { useEffect } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { ReactLenis } from '@studio-freight/react-lenis';
 
 import Main from './dom/Main';
 import Gallery from './three/Gallery';
-import { useEffect } from 'react';
 
 export default function App() {
   useEffect(() => {
     document.body.classList.remove('loading');
   }, []);
+
   return (
     <ReactLenis root>
       {/* DOM */}
