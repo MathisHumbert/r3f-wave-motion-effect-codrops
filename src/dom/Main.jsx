@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import articles from '../data/articles';
 import Article from './Article';

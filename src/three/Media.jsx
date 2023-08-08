@@ -1,16 +1,20 @@
 import { useEffect, useMemo, useRef } from 'react';
-import { useFrame, useThree, useLoader } from '@react-three/fiber';
-import { TextureLoader } from 'three';
+import { useFrame, useThree } from '@react-three/fiber';
 import { useLenis } from '@studio-freight/react-lenis';
 import { gsap } from 'gsap';
 
-export default function Media({ element, img, geometry, vertex, fragment }) {
+export default function Media({
+  element,
+  texture,
+  geometry,
+  vertex,
+  fragment,
+}) {
   const mesh = useRef();
   const bounds = useRef();
   const currentScroll = useRef();
 
   const { viewport, size } = useThree();
-  const texture = useLoader(TextureLoader, img.getAttribute('src'));
 
   useLenis(({ scroll }) => {
     if (bounds.current !== undefined) {
